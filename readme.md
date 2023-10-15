@@ -22,6 +22,12 @@
 
 [git switch](#git-switch)
 
+[git ls-files](#git-ls-files)
+
+[Deleting working directory files which are already staged](#deleting-working-directory-files-which-are-already-staged)
+
+[git rm](#git-rm)
+
 ## git init
 
 To initialize a repository
@@ -93,3 +99,14 @@ From git 2.23 onwards.
 To create new braches <code>git switch -c new_branch_name</code> and move between branches <code>git switch branch_name</code>.
 
 With <code>git checkout</code>, we can work with both commits and branches, but <code>git switch</code> is specific to working with branches. Hence <code>git switch</code> has a clearly defined function.
+
+## git ls-files
+
+To see all files of a branch that are in the staging area.
+
+## Deleting working directory files which are already staged
+
+One way to delete a staged file from the working directory is to first delete the file from the working area the issue <code>git add file_name</code> command so that the changes for deletion are recorded to the staging area, then issue <code>git commit file_name</code> command to finally remove the file from the repository also.
+
+another way is to use
+<code>git rm file_name</code> <a id="git-rm"></a> command to remove the file directly from the staging area, then issue <code>git commit file_name</code> command to make changes in the repository also.
