@@ -30,6 +30,8 @@
 
 [How to undo unstaged changes?](#how-to-undo-unstaged-changes)
 
+[git restore](#git-restore)
+
 ## git init
 
 To initialize a repository
@@ -121,3 +123,8 @@ To undo the changes made to a staged file, issue <code>git checkout file_name_ha
 It will tell git to checkout the latest commit of the specified file, it will essentially remove any unstaged changes in the file.
 
 To undo changes from all file or multiple file that are staged, issue <code>git checkout .</code> or <code>git checkout file_1 file_2</code> respectively.
+
+**From git 2.23**
+
+<code>git restore file_name</code> <a id="git-restore><a> can be used.
+
