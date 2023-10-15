@@ -81,3 +81,5 @@ In a specific branch the latest is referred by a pointer called HEAD.
 ## What is "detached HEAD"?
 
 When we checkout a specific commit in a branch, git does not know whether the commit belongs to this branch only or the parent branch. In such cases, if the commit belongs to both this and the parent branch, then the commit is known as the detached HEAD.
+
+detached HEAD simply means the commit is not a part of a specific branch. A detached HEAD is itself treated as a branch. This means that we are now working with a specific commit, not with a specific branch.
