@@ -36,6 +36,10 @@
 
 [git clean](#git-clean)
 
+[How to undo staged changes?](#how-to-undo-staged-changes)
+
+[git reset](#git-reset)
+
 ## git init
 
 To initialize a repository
@@ -136,4 +140,14 @@ To undo changes from all file or multiple file that are staged, issue <code>git 
 <code>git clean -dn</code> <a id="git-clean"></a> command lists the untracked files to be deleted.
 
 <code>git clean -df</code> command delete untracked files forcefully.
+
+## How to undo staged changes?
+
+Traditional way:
+
+<code>git reset file_name</code> <a id="git-reset"></a> to overwrite the staged version of the file with the latest commit version of the file.
+
+<code>git checkout file_name</code> to overwrite the file in the working directory with the file in the staged area.
+
+Remember, <code>git checkout</code> compares the contents of the file in current directory or working directory with the content of the file in the staged area. If there is no difference then no overwrite action will take place, else the file in the working directory will be replaced with the version of the file in the staged area.
 
