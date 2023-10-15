@@ -151,3 +151,9 @@ Traditional way:
 
 Remember, <code>git checkout</code> compares the contents of the file in current directory or working directory with the content of the file in the staged area. If there is no difference then no overwrite action will take place, else the file in the working directory will be replaced with the version of the file in the staged area.
 
+From git 2.23
+
+<code>git restore --staged file_name</code>
+
+<code>git checkout file_name</code>
+
