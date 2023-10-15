@@ -1,29 +1,49 @@
-# git init
+# Git Commands
+[git init](#git-init)
+
+[git add](#git-add)
+
+[git commit](#git-commit)
+
+[git log](#git-log)
+
+[git checkout](#git-checkout)
+
+[git branch](#git-branch)
+
+[Alternative way of creating a branch](#alternative-way-of-creating-a-branch)
+
+[git merge](#git-merge)
+
+[What is the "HEAD"?](#what-is-the-head)
+
+
+## git init
 To initialize a repository
 
-# git add
+## git add
 To add new or untracked and modified files from working directory to the staged area.
 
 Stage are is also known as index, technically.
 
-# git commit
+## git commit
 To commit the new files or modified files from index to the repository or the object area.
 
 Techinically, both stage and objects are are part of the repository.
 
-# git log
+## git log
 To see the details of all commits.
 
 A commit log consists of the commit hash, author with email, commit date, message.
 
-# git checkout
+## git checkout
 To load or go to a specific commit.
 
 To go to a specific branch.
 
 Main purpose of checkout command is to move between different branches.
 
-# git branch
+## git branch
 To list all branches in the repository or to create a new branch.
 
 Current working branch is often indicated with * (asterisk).
@@ -34,16 +54,16 @@ Remember, untracked files are always present in the working directory irrespecti
 
 Also remember that, in normal circumtances, once we add a file in the staging area, it is always present in the staging area. That means commited files are also in the staging area, they are not removed from the staging area after being commited to the repository.
 
-## Alternative way of creating a branch
+### Alternative way of creating a branch
 Normally, we issue <code>git branch new_branch_name</code> command to create a branch and then to move the that branch we issue <code>git checkout newly_created_branch_name</code> command. So, it a two step process to move to a newly created branch and work with it.
 
 But, there is a way to create a branch and move to it simultaneously.
 
 We issue <code>git checkout -b new_branch_name</code> command.
 
-# git merge
+## git merge
 To merge another branch to this branch.
 
-# What is the "HEAD"?
+## What is the "HEAD"?
 In a specific branch the latest is referred by a pointer called HEAD.
 
