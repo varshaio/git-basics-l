@@ -20,6 +20,8 @@
 
 [What is "detached HEAD"?](#what-is-detached-head)
 
+[git switch](#git-switch)
+
 ## git init
 
 To initialize a repository
@@ -83,3 +85,11 @@ In a specific branch the latest is referred by a pointer called HEAD.
 When we checkout a specific commit in a branch, git does not know whether the commit belongs to this branch only or the parent branch. In such cases, if the commit belongs to both this and the parent branch, then the commit is known as the detached HEAD.
 
 detached HEAD simply means the commit is not a part of a specific branch. A detached HEAD is itself treated as a branch. This means that we are now working with a specific commit, not with a specific branch.
+
+## git switch
+
+From git 2.23 onwards.
+
+To create new braches <code>git switch -c new_branch_name</code> and move between branches <code>git switch branch_name</code>.
+
+With <code>git checkout</code>, we can work with both commits and branches, but <code>git switch</code> is specific to working with branches. Hence <code>git switch</code> has a clearly defined function.
