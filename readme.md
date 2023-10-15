@@ -28,6 +28,8 @@
 
 [git rm](#git-rm)
 
+[How to undo unstaged changes?](#how-to-undo-unstaged-changes)
+
 ## git init
 
 To initialize a repository
@@ -112,3 +114,10 @@ another way is to use
 <code>git rm file_name</code> <a id="git-rm"></a> command to remove the file directly from the staging area, then issue <code>git commit file_name</code> command to make changes in the repository also.
 
 Idea behind this mechanism is that the files we see in our working directory are of two kinds only, first type of files is untracked files i.e. new files and second type of files is tracked files i.e. files that are in the staging area and modified files according to git. If we remove a file from the staging area then to conform to the working mechanism of git, that file will also be removed from the working directory automatically. All we have remaining to do is to commit the deletion change to the repository to make the change permanent.
+
+## How to undo unstaged changes?
+To undo the changes made to a staged file, issue <code>git checkout file_name_having_unstaged_changes</code>.
+
+It will tell git to checkout the latest commit of the specified file, it will essentially remove any unstaged changes in the file.
+
+To undo changes from all file or multiple file that are staged, issue <code>git checkout .</code> or <code>git checkout file_1 file_2</code> respectively.
