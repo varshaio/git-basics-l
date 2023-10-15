@@ -126,5 +126,5 @@ To undo changes from all file or multiple file that are staged, issue <code>git 
 
 **From git 2.23**
 
-<code>git restore file_name</code> <a id="git-restore><a> can be used.
+<code>git restore file_name</code> <a id="git-restore"><a> can be used.
 
